@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem
+        id="subcontract_root_menu"
+        action="subcontract_material_order_action"/>
+</odoo>

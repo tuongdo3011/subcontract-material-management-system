@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="subcontract_material_finished_form" model="ir.ui.view">
+        <field name="name">subcontract.material.finished.form</field>
+        <field name="model">subcontract.material.finished</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0" edit="0">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="order_id"/>
+                            <field name="product_id"/>
+                        </group>
+                        <group>
+                            <field name="qty"/>
+                            <field name="qty_received"/>
+                            <field name="qty_remaining"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

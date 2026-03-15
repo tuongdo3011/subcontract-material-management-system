@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="subcontract_material_detail_wizard_form" model="ir.ui.view">
+        <field name="name">subcontract.material.detail.wizard.form</field>
+        <field name="model">subcontract.material.detail.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="date_receipted"/>
+                    <field name="total_qty_receipted"/>
+                </group>
+                <notebook>
+                    <page string="Chi tiết">
+                        <group>
+                            <field name="finished_product"/>
+                            <field name="qty_receipted"/>
+                        </group>
+                    </page>
+                </notebook>
+                <footer>
+                    <button string="Đóng" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

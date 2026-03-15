@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="subcontract_material_order_line_list" model="ir.ui.view">
+        <field name="name">subcontract.material.order.line.list</field>
+        <field name="model">subcontract.material.order.line</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="product_id"/>
+                <field name="service_id"/>
+                <field name="product_uom_id"/>
+                <field name="product_uom_qty"/>
+                <field name="price_unit"/>
+                <field name="price_subtotal"/>
+                <field name="currency_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="subcontract_material_order_line_form" model="ir.ui.view">
+        <field name="name">subcontract.material.order.line.form</field>
+        <field name="model">subcontract.material.order.line</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="service_id"/>
+                            <field name="currency_id"/>
+                        </group>
+                        <group>
+                            <field name="product_uom_id"/>
+                            <field name="product_uom_qty"/>
+                            <field name="price_unit"/>
+                            <field name="price_subtotal"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

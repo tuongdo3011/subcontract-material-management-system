@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="subcontract_material_refuse_wizard_form" model="ir.ui.view">
+        <field name="name">subcontract.material.refuse.wizard.form</field>
+        <field name="model">subcontract.material.refuse.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="reason"/>
+                </group>
+                <footer>
+                    <button name="action_confirm_refuse" type="object" string="Xác nhận"/>
+                    <button string="Hủy" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
